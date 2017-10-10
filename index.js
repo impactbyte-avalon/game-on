@@ -1,9 +1,29 @@
-console.log("GUESS PLAY");
-console.log("-----------------");
-console.log("Guess the number : from 0 to 100");
+$("#gameon").submit(function(event) {
+  event.preventDefault();
 
-function myFunction() {
-  return Math.floor(Math.random() * 100);
-}
+  function generateNumber() {
+    return Math.floor(Math.random() * 10);
+  }
 
-console.log(myFunction());
+  const computerNumber = generateNumber();
+  console.log("random : " + computerNumber);
+
+  console.log($("#gameon-input")[0].value);
+  var userG = document.getElementById("gameon-input").value;
+  // var result1 = 7 == userG ? (result = "Correct! ") : (result = "Wrong!");
+
+  if (computerNumber === parseInt(userG)) {
+    result1 = "Correct";
+  } else {
+    result1 = "Wrong";
+  }
+
+  console.log(result1);
+
+  var random = document.getElementById("angka");
+  random.innerHTML =
+    "user number : " + userG + " correct number : " + computerNumber;
+
+  var myResult = document.getElementById("result");
+  myResult.innerHTML = result1;
+});
