@@ -10,19 +10,22 @@ $("#gameon").submit(function(event) {
 
   console.log($("#gameon-input")[0].value);
   var userG = document.getElementById("gameon-input").value;
-  // var result1 = 7 == userG ? (result = "Correct! ") : (result = "Wrong!");
 
-  if (computerNumber === parseInt(userG)) {
+  computerNumber === parseInt(userG)
+    ? (result1 = "Correct! ")
+    : (result1 = "Wrong!");
+
+  /*if (computerNumber === parseInt(userG)) {
     result1 = "Correct";
   } else {
     result1 = "Wrong";
-  }
+  }*/
 
   console.log(result1);
 
   var random = document.getElementById("angka");
   random.innerHTML =
-    "user number : " + userG + " correct number : " + computerNumber;
+    "user number : " + userG + " | correct number : " + computerNumber;
 
   var myResult = document.getElementById("result");
   myResult.innerHTML = result1;
