@@ -1,0 +1,71 @@
+.container {
+    position: absolute;
+    width: 60%;
+    height: 55%;
+    background: rgb(206, 233, 160);
+}
+.gif{
+        width: 150px;
+}
+.gengar{
+    width: 190px;
+    position: absolute;
+    top: 30px;
+    right: -50px;
+}
+.player {
+   padding-left: 100px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 250px;
+}
+
+.health1 {
+    border: ridge;
+    height: 18px;
+    width: 250px;
+    background: green;
+    display: flex;
+    align-self: flex-start;
+}
+
+.command {
+    display: flex;
+    align-items: center;
+}
+
+.attack {
+    font-size: x-large;
+}
+
+.runin {
+    font-size: x-large;
+}
+.enemy-container {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 375px;
+}
+.health2 {
+    border: ridge;
+    height: 18px;
+    width: 250px;
+    /* margin-top: 20px;
+    margin-left: 290px; */
+    background: rgb(255, 255, 255);
+}
+.health3 {
+    border: ridge;
+    height: 18px;
+    width: 250px;
+    /* margin-top: 20px;
+    margin-left: 290px; */
+    position: absolute;
+    top: 0;
+    background: green; 
+    /* margin-top: -19px; */
+
+}
